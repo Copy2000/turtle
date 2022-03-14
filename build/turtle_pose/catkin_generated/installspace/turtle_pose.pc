@@ -1,0 +1,8 @@
+prefix=/home/lu/turtle_ws/install
+
+Name: turtle_pose
+Description: Description of turtle_pose
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

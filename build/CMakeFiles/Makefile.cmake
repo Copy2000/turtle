@@ -15,9 +15,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin_generated/order_packages.cmake"
   "turtle_circle/catkin_generated/ordered_paths.cmake"
   "turtle_circle/catkin_generated/package.cmake"
+  "turtle_pose/catkin_generated/ordered_paths.cmake"
+  "turtle_pose/catkin_generated/package.cmake"
   "/home/lu/turtle_ws/src/CMakeLists.txt"
   "/home/lu/turtle_ws/src/turtle_circle/CMakeLists.txt"
   "/home/lu/turtle_ws/src/turtle_circle/package.xml"
+  "/home/lu/turtle_ws/src/turtle_pose/CMakeLists.txt"
+  "/home/lu/turtle_ws/src/turtle_pose/package.xml"
   "/opt/ros/kinetic/share/catkin/cmake/../package.xml"
   "/opt/ros/kinetic/share/catkin/cmake/all.cmake"
   "/opt/ros/kinetic/share/catkin/cmake/assert.cmake"
@@ -171,6 +175,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "turtle_circle/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "turtle_pose/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -200,4 +205,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "turtle_circle/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake"
   "turtle_circle/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake"
   "turtle_circle/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake"
+  "turtle_pose/CMakeFiles/turtle_pose.dir/DependInfo.cmake"
   )

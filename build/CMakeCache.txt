@@ -344,6 +344,12 @@ turtle_circle_BINARY_DIR:STATIC=/home/lu/turtle_ws/build/turtle_circle
 //Value Computed by CMake
 turtle_circle_SOURCE_DIR:STATIC=/home/lu/turtle_ws/src/turtle_circle
 
+//Value Computed by CMake
+turtle_pose_BINARY_DIR:STATIC=/home/lu/turtle_ws/build/turtle_pose
+
+//Value Computed by CMake
+turtle_pose_SOURCE_DIR:STATIC=/home/lu/turtle_ws/src/turtle_pose
+
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/kinetic/share/xmlrpcpp/cmake
 
@@ -449,7 +455,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

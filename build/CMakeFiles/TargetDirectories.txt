@@ -51,3 +51,11 @@
 /home/lu/turtle_ws/build/turtle_circle/CMakeFiles/install/strip.dir
 /home/lu/turtle_ws/build/turtle_circle/CMakeFiles/install/local.dir
 /home/lu/turtle_ws/build/turtle_circle/CMakeFiles/install.dir
+/home/lu/turtle_ws/build/turtle_pose/CMakeFiles/rebuild_cache.dir
+/home/lu/turtle_ws/build/turtle_pose/CMakeFiles/edit_cache.dir
+/home/lu/turtle_ws/build/turtle_pose/CMakeFiles/list_install_components.dir
+/home/lu/turtle_ws/build/turtle_pose/CMakeFiles/install.dir
+/home/lu/turtle_ws/build/turtle_pose/CMakeFiles/turtle_pose.dir
+/home/lu/turtle_ws/build/turtle_pose/CMakeFiles/install/strip.dir
+/home/lu/turtle_ws/build/turtle_pose/CMakeFiles/install/local.dir
+/home/lu/turtle_ws/build/turtle_pose/CMakeFiles/test.dir

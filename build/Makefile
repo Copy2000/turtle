@@ -490,6 +490,19 @@ std_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f turtle_circle/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make turtle_circle/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
+#=============================================================================
+# Target rules for targets named turtle_pose
+
+# Build rule for target.
+turtle_pose: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtle_pose
+.PHONY : turtle_pose
+
+# fast build rule for target.
+turtle_pose/fast:
+	$(MAKE) -f turtle_pose/CMakeFiles/turtle_pose.dir/build.make turtle_pose/CMakeFiles/turtle_pose.dir/build
+.PHONY : turtle_pose/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -528,6 +541,7 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... turtle_pose"
 .PHONY : help
 
 

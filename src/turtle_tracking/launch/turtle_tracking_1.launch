@@ -1,0 +1,15 @@
+<launch>
+<!-- 启动第一只乌龟的节点-->
+<node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node" output="screen"/>
+<!--下面两个二选一作为turtle1速度控制-->
+<node pkg="turtlesim" type="turtle_teleop_key" name="turtle_teleop_key" output="screen"/>
+
+<!--发布第一只乌龟的坐标-->
+<node pkg="turtle_tracking" type="getTurtle1Pose" name="getTurtle1Pose" output="screen"/>
+<!--发布第一只乌龟的坐标-->
+<node pkg="turtle_tracking" type="getTurtle2Pose" name="getTurtle2Pose" output="screen"/>
+<!--坐标变换-->
+<node pkg="turtle_tracking" type="frameTransform" name="frameTransform" output="screen"/>
+
+</launch>
+

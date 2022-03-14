@@ -1,0 +1,8 @@
+prefix=/home/lu/turtle_ws/install
+
+Name: turtle_tf
+Description: Description of turtle_tf
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -11,7 +11,7 @@ int main(int argc,char** argv)
     ros::Publisher cmd_vel = nh.advertise<geometry_msgs::Twist>("/turtle1/cmd_vel",10);
 
     geometry_msgs::Twist twist;
-    twist.linear.x = 3;
+    twist.linear.x = 5;
 
     //现在让乌龟绕着z轴向左旋转，以2pi/s的速度
     twist.angular.z = 2;

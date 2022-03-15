@@ -7,5 +7,7 @@
 subdirs(gtest)
 subdirs(myturtle_tf)
 subdirs(turtle_circle)
+subdirs(turtle_guyueju)
 subdirs(turtle_pose)
 subdirs(turtle_tracking)
+subdirs(turtle_csdn)

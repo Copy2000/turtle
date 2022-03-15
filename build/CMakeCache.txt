@@ -336,7 +336,7 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/kinetic/lib/libmessage_filters.so
+lib:FILEPATH=/opt/ros/kinetic/lib/libtf2.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/kinetic/share/message_filters/cmake
@@ -389,6 +389,9 @@ sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/sensor_msgs/cmake
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/kinetic/share/std_msgs/cmake
 
+//The directory containing a CMake configuration file for std_srvs.
+std_srvs_DIR:PATH=/opt/ros/kinetic/share/std_srvs/cmake
+
 //The directory containing a CMake configuration file for tf2.
 tf2_DIR:PATH=/opt/ros/kinetic/share/tf2/cmake
 
@@ -414,6 +417,18 @@ turtle_circle_BINARY_DIR:STATIC=/home/lu/turtle_ws/build/turtle_circle
 turtle_circle_SOURCE_DIR:STATIC=/home/lu/turtle_ws/src/turtle_circle
 
 //Value Computed by CMake
+turtle_csdn_BINARY_DIR:STATIC=/home/lu/turtle_ws/build/turtle_csdn
+
+//Value Computed by CMake
+turtle_csdn_SOURCE_DIR:STATIC=/home/lu/turtle_ws/src/turtle_csdn
+
+//Value Computed by CMake
+turtle_guyueju_BINARY_DIR:STATIC=/home/lu/turtle_ws/build/turtle_guyueju
+
+//Value Computed by CMake
+turtle_guyueju_SOURCE_DIR:STATIC=/home/lu/turtle_ws/src/turtle_guyueju
+
+//Value Computed by CMake
 turtle_pose_BINARY_DIR:STATIC=/home/lu/turtle_ws/build/turtle_pose
 
 //Value Computed by CMake
@@ -430,6 +445,9 @@ turtle_tracking_BINARY_DIR:STATIC=/home/lu/turtle_ws/build/turtle_tracking
 
 //Value Computed by CMake
 turtle_tracking_SOURCE_DIR:STATIC=/home/lu/turtle_ws/src/turtle_tracking
+
+//The directory containing a CMake configuration file for turtlesim.
+turtlesim_DIR:PATH=/opt/ros/kinetic/share/turtlesim/cmake
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/kinetic/share/xmlrpcpp/cmake
@@ -536,7 +554,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

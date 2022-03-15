@@ -8,10 +8,11 @@
 <node pkg="myturtle_tf" type="turtle_br" name="agent1" output="screen">
     <param name="turtle_name" type="string" value="/turtle1"/>
 </node>
+<node pkg="myturtle_tf" type="turtle_listen" name="turtle_listen" output="screen">
+    <param name="newturtle" type="string" value="/turtle2"/>
+</node>
+
 <node pkg="myturtle_tf" type="turtle_br" name="agent2" output="screen">
     <param name="turtle_name" type="string" value="/turtle2"/>
 </node>
-
-<node pkg="myturtle_tf" type="turtle_listen" name="turtle_listen" output="screen"/>
-
 </launch>

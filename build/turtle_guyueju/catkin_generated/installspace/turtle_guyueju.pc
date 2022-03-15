@@ -1,0 +1,8 @@
+prefix=/home/lu/turtle_ws/install
+
+Name: turtle_guyueju
+Description: Description of turtle_guyueju
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

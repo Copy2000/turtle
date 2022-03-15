@@ -10,12 +10,19 @@ int main(int argc, char *argv[])
 
     ros::service::waitForService("spawn");
     ros::ServiceClient add_turtle = nh.serviceClient<turtlesim::Spawn>("spawn");
-    turtlesim::Spawn srv;
-    add_turtle.call(srv);
-
+    turtlesim::Spawn init_place;
+    init_place.request.name = "turtle2";
+    init_place.request.theta = 0;
+    init_place.request.x = 1;
+    init_place.request.y = 1;
+    ros::service::waitForService("/spawn");
+    if(add_turtle.call(init_place))
+    {
+        ROS_INFO("%s created successfully ...",init_place.response.name.c_str());
+    }
     std::string newturtle;
     nh.getParam("newturtle",newturtle);
-    std::cout<<newturtle<<std::endl;
+    ROS_INFO("newturtle is %s",newturtle.c_str());
     ros::Publisher newturtle_vel = nh.advertise<geometry_msgs::Twist>(newturtle+"/cmd_vel",10);
 
     tf::TransformListener listener;
@@ -27,8 +34,8 @@ int main(int argc, char *argv[])
         loop_rate.sleep();
         try
         {
-            listener.waitForTransform("/"+newturtle,"/turtle1",ros::Time(0),ros::Duration(3));
-            listener.lookupTransform("/"+newturtle,"/turtle1",ros::Time(0),transform);
+            //listener.waitForTransform(newturtle,"/turtle1",ros::Time(0),ros::Duration(3));
+            listener.lookupTransform(newturtle,"/turtle1",ros::Time::now()-ros::Duration(0.1),transform);
         }
         catch (tf::TransformException &ex )
         {

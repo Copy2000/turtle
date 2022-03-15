@@ -128,8 +128,10 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/lu/turtle_ws/build/gtest/cmake_install.cmake")
   include("/home/lu/turtle_ws/build/myturtle_tf/cmake_install.cmake")
   include("/home/lu/turtle_ws/build/turtle_circle/cmake_install.cmake")
+  include("/home/lu/turtle_ws/build/turtle_guyueju/cmake_install.cmake")
   include("/home/lu/turtle_ws/build/turtle_pose/cmake_install.cmake")
   include("/home/lu/turtle_ws/build/turtle_tracking/cmake_install.cmake")
+  include("/home/lu/turtle_ws/build/turtle_csdn/cmake_install.cmake")
 
 endif()
 

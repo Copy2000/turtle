@@ -7,6 +7,7 @@ std::string turtle_name;
 void PoseCallBack(const turtlesim::PoseConstPtr& msg)
 {
     //定义一个广播，相当于发布话题定义一个publisher
+    //ROS_INFO("%s->x is %f;y is %f;theta is %f",turtle_name.c_str(),msg->x,msg->y,msg->theta);
     static tf::TransformBroadcaster br;
 
     //根据当前turtle乌龟位姿，设置相对于世界坐标系world的tf：：transform类型的坐标变换
@@ -26,7 +27,7 @@ void PoseCallBack(const turtlesim::PoseConstPtr& msg)
     world：父坐标系的名字
     turtle_name:子坐标系的名字
     */
-    br.sendTransform(tf::StampedTransform(Transform,ros::Time::now(),"world",turtle_name));
+    br.sendTransform(tf::StampedTransform(Transform,ros::Time::now(),"/world",turtle_name));
 }
 
 int main(int argc, char *argv[])
@@ -41,8 +42,8 @@ int main(int argc, char *argv[])
     //     return -1;
     // }
     // turtle_name = argv[1];
-    std::cout<<turtle_name<<std::endl;
-    ros::Subscriber sub = nh.subscribe(turtle_name+"/pose",10,&PoseCallBack);
+    ROS_INFO("turtle_name is %s",turtle_name.c_str());
+    ros::Subscriber sub = nh.subscribe(turtle_name+"/pose",1,&PoseCallBack);
 
     ros::spin();
 
